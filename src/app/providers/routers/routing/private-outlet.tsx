@@ -1,6 +1,6 @@
+import { ROUTES } from '@shared/constants/routes';
+import { useAuth } from '@shared/hooks/use-auth';
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
-import { ROUTES } from 'shared/constants/routes';
-import { useAuth } from 'shared/hooks/use-auth';
 
 export function PrivateOutlet() {
   const token = useAuth();
